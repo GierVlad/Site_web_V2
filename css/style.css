@@ -1,0 +1,116 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html{
+background-color: #CB1202;
+font-family: impact;
+color: #FFF;
+}
+
+body{
+background-image: url("image/P1_back");
+}
+
+a{
+text-decoration: none;
+color: #FFF;
+}
+
+a:hover{
+color: #FCA403;
+}
+
+.or{
+color:gold;
+}
+
+.argent{
+color:silver;
+}
+
+.bronze{
+color:peru;
+}
+
+header{
+text-align:center;
+}
+
+
+nav a{
+text-align: center;
+padding-left: 3%;
+padding-right: 1%;
+}
+
+.taille{
+width: 250px;
+height: 250px;
+background-color: #e96d6d;
+border-radius: 50%;
+}
+
+.mcqueen{
+width: 250px;
+height: 250px;
+z-index: 2;
+}
+
+/*animation, position de l'image au début et à la fin de l'animation*/
+@keyframes cars{ 
+0% {position: relative; left: 0%;}
+100% {position: relative; left: 50%;}
+}
+
+/*paramètres d'animation*/
+.anim{ 
+animation-name: cars;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+.textsize{
+font-size: 12px
+}
+
+._footer {
+background-color:#901207;
+text-align: center;
+size: 15%;
+}
+
+._header {
+background-color: #901207;
+}
+
+.paragraphe {
+text-align: center;
+}
+
+.classement {
+text-align: center;
+}
+
+/*sépare les élément en 3 pour l'écran*/
+.flexx {
+    width: 100%;
+    height: calc(100% /3);
+}
+
+.grand_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*responsive*/
+@media screen and(max-width:400px) {
+
+    .mcqueen{
+        width: 125px;
+        height: 125px;
+    }
+}

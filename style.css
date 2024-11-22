@@ -1,0 +1,184 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body{
+transition: background-color 0.3s, color 0.3s;
+background-color: #CB1202;
+font-family: impact;
+color: #FFF;
+}
+
+body.DarkMode {
+transition: background-color 0.3s, color 0.3s;
+background-color: #000000;
+font-family: impact;
+color: #c6d3f9;
+}
+
+a{
+text-decoration: none;
+color: #FFF;
+}
+
+a:hover{
+color: #FCA403;
+}
+
+.or{
+color:gold;
+}
+
+.argent{
+color:silver;
+}
+
+.bronze{
+color:peru;
+}
+
+header{
+text-align:center;
+}
+
+nav a{
+text-align: center;
+padding-left: 3%;
+padding-right: 1%;
+}
+
+.taille{
+width: 250px;
+height: 250px;
+background-color: #e96d6d;
+border-radius: 50%;
+}
+
+.mcqueen{
+width: 250px;
+height: 250px;
+z-index: 2;
+}
+
+/*animation, position de l'image au début et à la fin de l'animation*/
+@keyframes cars{ 
+0% {position: relative; left: 0%;}
+100% {position: relative; left: 50%;}
+}
+
+/*paramètres d'animation*/
+.anim{ 
+animation-name: cars;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+.textsize{
+font-size: 12px
+}
+
+._footer {
+background-color:#901207;
+text-align: center;
+size: 15%;
+}
+
+._header {
+background-color: #901207;
+}
+
+header.DarkMode {
+background-color: #3b3b3b;
+}
+footer.DarkMode {
+background-color: #3b3b3b;
+}
+
+.paragraphe {
+text-align: center;
+}
+
+.classement {
+text-align: center;
+}
+
+/*sépare les élément en 3 pour l'écran*/
+.flexx {
+    width: 100%;
+    height: calc(100% /3);
+}
+
+.grand_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#DarkModeButton {
+    position: absolute;
+    top: 5px; 
+    right: 10px; 
+}
+
+#DarkModeButton img {
+    width: 40px; 
+    height: 40px; 
+    cursor: pointer; 
+}
+
+#DarkModeButton img:hover {
+    opacity: 0.6; 
+}
+
+/*responsive*/
+@media screen and(max-width:400px) {
+
+    .mcqueen{
+        width: 125px;
+        height: 125px;
+    }
+}
+
+/* Style pour les tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #901207;
+    background-color: #ad1103;
+    color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: #FCA403;
+}
+
+.tab-active {
+    background-color: #FCA403;
+    color: rgb(255, 255, 255);
+}
+
+/* Contenu des tabs */
+.content {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff00;
+    color: rgb(255, 255, 255);
+}
+
+.content.active {
+    display: block;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style_form.css">
+</head>
+<body>
+    <div class="message_error"></div>
+        <ul></ul>
+    <div class="message_success"> </div>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" name="pseudo" id="pseudo">
+        </div>
+        <div>
+            <label for="mail">Mail</label>
+            <input type="email" name="mail" id="mail">
+        </div>
+        <div>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="password">Confirmer le mot de passe</label>
+            <input type="password" name="password" id="password2">
+        </div>
+        <div class="Choix">
+            <div>
+                <input type="radio" name="C1" id="C1" value="C1">
+                <label for="C1">Majeur</label>
+            </div>
+            <div>
+                <input type="radio" name="C2" id="C2" value="C2">
+                <label for="C2">Mineur</label>
+            </div>
+        </div>
+        <button type="submit">Envoyer</button>
+    </form>
+    <script src="main_form.js"></script>
+</body>
+</html>

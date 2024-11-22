@@ -153,8 +153,8 @@ text-align: center;
 .tab {
     padding: 10px 20px;
     cursor: pointer;
-    border: 1px solid #901207;
-    background-color: #ad1103;
+    border: 1px solid rgba(255, 255, 255, 0.742);
+    background-color: #0000007b;
     color: white;
     margin-right: 10px;
     border-radius: 5px;
